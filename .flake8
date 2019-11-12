@@ -1,0 +1,3 @@
+[flake8]
+ignore = E501, W503
+exclude = datapackage_to_datasette/__init__.py
