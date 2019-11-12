@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "datapackage-to-datasette"
+version = "0.1.0"
+description = "Import Frictionless Data Datapackages into SQLite and generate Datasette metadata"
+authors = ["chris48s"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/chris48s/datapackage-to-datasette"
+homepage = "https://github.com/chris48s/datapackage-to-datasette"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+datapackage = "^1.10.0"
+tableschema-sql = "^1.3.0"
+sqlalchemy = "^1.3.0"
+deepmerge = "==0.1.0"
+
+[tool.poetry.dev-dependencies]
+isort = "^4.3"
+flake8 = "^3.7.9"
+coverage = "^4.5.4"
+black = { version = "==19.10b0", allows-prereleases = true }
+python-coveralls = "^2.9.3"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry.scripts]
+datapackage-to-datasette = 'datapackage_to_datasette.cli:main'

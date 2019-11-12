@@ -1,0 +1,150 @@
+{
+  "profile": "tabular-data-package",
+  "name": "contrived-example",
+  "title": "A datapackage designed to artificially create a range of conditions",
+  "version": "v0.1.0",
+  "contributors": [{
+      "title": "Andrew Berkeley ",
+      "role": "author"
+    },
+    {
+      "title": "James Smith",
+      "role": "author",
+      "organization": "Open Data Institute"
+    },
+    {
+      "title": "Rufus Pollock",
+      "role": "author",
+      "organization": "Open Knowledge International"
+    }
+  ],
+  "homepage": "http://foo.bar/baz",
+  "resources": [{
+      "profile": "tabular-data-resource",
+      "path": "data/units.csv",
+      "name": "units",
+      "title": "Standard Units",
+      "description": "Standard Units for the Frictionless Data specification",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "sources": [{
+        "title": "Units",
+        "path": "http://specs.okfnlabs.org/units/"
+      }],
+      "licenses": [{
+        "name": "CC-BY-3.0",
+        "title": "Creative Commons Attribution 3.0",
+        "path": "https://creativecommons.org/licenses/by/3.0/"
+      },
+      {
+        "name": "CC-BY-4.0",
+        "title": "Creative Commons Attribution 4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/"
+      }],
+      "schema": {
+        "fields": [{
+          "name": "UID",
+          "title": "Unique Unit Identifier",
+          "type": "string",
+          "format": "default",
+          "constraints": {
+            "required": true,
+            "unique": true
+          }
+        }, {
+          "name": "name",
+          "type": "string",
+          "format": "default"
+        }, {
+          "name": "symbol",
+          "type": "string",
+          "format": "default"
+        }, {
+          "name": "physical quantity",
+          "type": "string",
+          "format": "default"
+        }, {
+          "name": "dimensions",
+          "type": "string",
+          "format": "default"
+        }],
+        "missingValues": [
+          ""
+        ],
+        "primaryKeys": [
+          "UID"
+        ]
+      },
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": true
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "path": "data/unit-prefixes.csv",
+      "name": "unit-prefixes",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "sources": [{
+        "title": "Units",
+        "path": "http://specs.okfnlabs.org/units/"
+      }],
+      "licenses": [{
+        "name": "CC-BY-4.0",
+        "title": "Creative Commons Attribution 4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/"
+      }],
+      "schema": {
+        "fields": [{
+            "name": "UID",
+            "title": "Unique Unit Prefix Identifier",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true,
+              "unique": true
+            }
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "symbol",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "factor",
+            "type": "any",
+            "format": "default"
+          }
+        ],
+        "missingValues": [
+          ""
+        ],
+        "primaryKeys": [
+          "UID"
+        ]
+      },
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": true
+      }
+    }
+  ]
+}

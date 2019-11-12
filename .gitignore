@@ -1,0 +1,11 @@
+# python cache files
+__pycache__/
+*.pyc
+
+# build artifacts
+build/
+dist/
+datapackage_to_datasette.egg-info/
+
+# test coverage
+.coverage
