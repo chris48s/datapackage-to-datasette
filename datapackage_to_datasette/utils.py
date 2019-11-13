@@ -7,6 +7,10 @@ from deepmerge import always_merger
 from sqlalchemy import create_engine
 
 
+class DataImportError(Exception):
+    pass
+
+
 def datapackage_descriptor_to_metadata_object(descriptor):
     obj = {}
     if descriptor.get("title", None):
@@ -48,12 +52,6 @@ def validate_write_mode(write_mode):
 
 
 def write_file(metadata, filename, write_mode):
-    if path.exists(filename) and not write_mode:
-        raise Exception(
-            f"File {filename} already exists. "
-            "Use write_mode to replace or merge the existing file."
-        )
-
     if not path.exists(filename):
         with open(filename, "w") as _:
             pass
@@ -69,6 +67,12 @@ def write_file(metadata, filename, write_mode):
 
 def datapackage_to_datasette(dbname, data_package, metadata_filename, write_mode=None):
     validate_write_mode(write_mode)
+
+    if path.exists(metadata_filename) and not write_mode:
+        raise DataImportError(
+            f"File {metadata_filename} already exists. "
+            "Use write_mode to replace or merge the existing file."
+        )
 
     dp = datapackage.Package(data_package)
     engine = create_engine(f"sqlite:///{dbname}")

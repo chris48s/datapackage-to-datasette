@@ -5,7 +5,11 @@ from unittest import TestCase
 
 import datapackage
 
-from datapackage_to_datasette.utils import datapackage_to_datasette, get_metadata_object
+from datapackage_to_datasette.utils import (
+    DataImportError,
+    datapackage_to_datasette,
+    get_metadata_object,
+)
 
 
 class GetMetadataObjectTests(TestCase):
@@ -61,7 +65,7 @@ class DatapackageToDatasetteTests(TestCase):
         self.metadata_tmp_file.close()
 
     def test_dont_replace_existing_metadata(self):
-        with self.assertRaises(Exception):
+        with self.assertRaises(DataImportError):
             datapackage_to_datasette(
                 self.database_tmp_file.name,
                 "tests/fixtures/units-and-prefixes/datapackage.json",

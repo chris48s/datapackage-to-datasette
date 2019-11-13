@@ -1,1 +1,1 @@
-from .utils import datapackage_to_datasette
+from .utils import DataImportError, datapackage_to_datasette
