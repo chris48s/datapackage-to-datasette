@@ -1,10 +1,13 @@
 import json
+import logging
 from os import path
 
 import datapackage
 from datapackage.package import _slugify_resource_name
 from deepmerge import always_merger
 from sqlalchemy import create_engine
+
+logging.basicConfig(format="%(levelname)s: %(message)s")
 
 
 class DataImportError(Exception):
@@ -22,6 +25,12 @@ def datapackage_descriptor_to_metadata_object(descriptor):
             obj["license"] = descriptor["licenses"][0]["name"]
         if descriptor["licenses"][0].get("path", None):
             obj["license_url"] = descriptor["licenses"][0]["path"]
+        num_licenses = len(descriptor["licenses"])
+        if num_licenses > 1:
+            logging.warning(
+                f"{num_licenses} licenses found, but datasette metadata only "
+                "allows one license to be specified. Only the first will be used."
+            )
     if descriptor.get("homepage", None):
         obj["source_url"] = descriptor["homepage"]
     return obj
