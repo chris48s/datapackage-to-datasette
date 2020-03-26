@@ -140,10 +140,10 @@ description = "Utilities to work with Data Packages as defined on specs.friction
 name = "datapackage"
 optional = false
 python-versions = "*"
-version = "1.11.0"
+version = "1.12.0"
 
 [package.dependencies]
-cchardet = ">=1.0"
+chardet = ">=3.0"
 click = ">=6.7"
 jsonpointer = ">=1.10"
 jsonschema = ">=2.5"
@@ -154,7 +154,8 @@ tabulator = ">=1.29"
 unicodecsv = ">=0.14"
 
 [package.extras]
-develop = ["mock", "pylama", "pytest", "pytest-cov", "tableschema-sql", "tox"]
+cchardet = ["cchardet (>=2.0)"]
+develop = ["mock", "pylama", "pytest", "pytest-cov", "httpretty", "tableschema-sql", "tox"]
 
 [[package]]
 category = "main"
@@ -732,8 +733,8 @@ coveralls = [
     {file = "coveralls-1.10.0.tar.gz", hash = "sha256:2da39aeaef986757653f0a442ba2bef22a8ec602c8bacbc69d39f468dfae12ec"},
 ]
 datapackage = [
-    {file = "datapackage-1.11.0-py2.py3-none-any.whl", hash = "sha256:64c0c60ab13ad3c922e56b3c99f721738f0759b293858716abc6f3a3957fd120"},
-    {file = "datapackage-1.11.0.tar.gz", hash = "sha256:39209fcaf1ac6e41b2166a3c07bc738ca6ec7557ad73ee5b51e42283e988ff24"},
+    {file = "datapackage-1.12.0-py2.py3-none-any.whl", hash = "sha256:c467b8d0e6ab4f1361d15f01c6107d0f43ff0f875e9126bdf271030d277363d2"},
+    {file = "datapackage-1.12.0.tar.gz", hash = "sha256:b9355d97c13371cebccae1132c48425c65746d69385aa9e718fc7c2d8d21c296"},
 ]
 deepmerge = [
     {file = "deepmerge-0.1.0-py2.py3-none-any.whl", hash = "sha256:ae23dd76d3c0d22d33a3fd3980c92d3f0773e4affb48d9b341847d0b0a24e8f8"},
