@@ -140,7 +140,7 @@ description = "Utilities to work with Data Packages as defined on specs.friction
 name = "datapackage"
 optional = false
 python-versions = "*"
-version = "1.12.2"
+version = "1.13.0"
 
 [package.dependencies]
 chardet = ">=3.0"
@@ -733,8 +733,8 @@ coveralls = [
     {file = "coveralls-1.11.1.tar.gz", hash = "sha256:67188c7ec630c5f708c31552f2bcdac4580e172219897c4136504f14b823132f"},
 ]
 datapackage = [
-    {file = "datapackage-1.12.2-py2.py3-none-any.whl", hash = "sha256:5b96f12e4cca1a7f944ca1bcb0ba6de5f8f7753e698f51c93b880089424b7304"},
-    {file = "datapackage-1.12.2.tar.gz", hash = "sha256:c7fdb76032f2f9b9576930b52b96f5b18ab114b6e80f82e33e1e8c3a3c268b1b"},
+    {file = "datapackage-1.13.0-py2.py3-none-any.whl", hash = "sha256:610cb50e4c1a97eaf98b4e18f426fc806062cee7f017ecf0d5999ebbc914e40b"},
+    {file = "datapackage-1.13.0.tar.gz", hash = "sha256:7f3a8c6f2b2bf694e26cd7fa5c26b40ea37b3b31911f9d29664629925d3ecace"},
 ]
 deepmerge = [
     {file = "deepmerge-0.1.0-py2.py3-none-any.whl", hash = "sha256:ae23dd76d3c0d22d33a3fd3980c92d3f0773e4affb48d9b341847d0b0a24e8f8"},
