@@ -10,7 +10,7 @@ install:
   - poetry install
 script:
   - coverage run --source=datapackage_to_datasette ./run_tests.py
-  - isort -rc -c --diff .
+  - isort --profile black -c --diff .
   - flake8 .
   - black --check .
   - poetry build
