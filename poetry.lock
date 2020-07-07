@@ -124,7 +124,7 @@ description = "Show coverage stats online via coveralls.io"
 name = "coveralls"
 optional = false
 python-versions = ">= 3.5"
-version = "2.0.0"
+version = "2.1.0"
 
 [package.dependencies]
 coverage = ">=4.1,<6.0"
@@ -624,7 +624,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["pathlib2", "contextlib2", "unittest2"]
 
 [metadata]
-content-hash = "deb924d015afd57015d4575901aca55631b793e3deeeb5e943428b460e9c70a0"
+content-hash = "d781a89c4cff14ee666672b8d6df14cd1854a20410defc2225e62d5b3e5b1521"
 python-versions = "^3.6"
 
 [metadata.files]
@@ -722,8 +722,8 @@ coverage = [
     {file = "coverage-5.0.3.tar.gz", hash = "sha256:77afca04240c40450c331fa796b3eab6f1e15c5ecf8bf2b8bee9706cd5452fef"},
 ]
 coveralls = [
-    {file = "coveralls-2.0.0-py2.py3-none-any.whl", hash = "sha256:41bd57b60321dfd5b56e990ab3f7ed876090691c21a9e3b005e1f6e42e6ba4b9"},
-    {file = "coveralls-2.0.0.tar.gz", hash = "sha256:d213f5edd49053d03f0db316ccabfe17725f2758147afc9a37eaca9d8e8602b5"},
+    {file = "coveralls-2.1.0-py2.py3-none-any.whl", hash = "sha256:ea2172efa91ae38096e94076f4ff19d63c1ba94ca4fcf8e54b775c359088fe52"},
+    {file = "coveralls-2.1.0.tar.gz", hash = "sha256:ccdaf0b875ee9b30d8775f08aec78543898c6a10ae7b3c312348c6f96dc66bc5"},
 ]
 datapackage = [
     {file = "datapackage-1.14.1-py2.py3-none-any.whl", hash = "sha256:b7a776321b28515d3f0e72d4ec24a30135dd135b813ac236735c923e1588dd55"},
