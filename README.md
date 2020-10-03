@@ -4,7 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/chris48s/datapackage-to-datasette/badge.svg?branch=master)](https://coveralls.io/github/chris48s/datapackage-to-datasette?branch=master)
 [![PyPI Version](https://img.shields.io/pypi/v/datapackage-to-datasette.svg)](https://pypi.org/project/datapackage-to-datasette/)
 ![License](https://img.shields.io/pypi/l/datapackage-to-datasette.svg)
-![Python Support](https://img.shields.io/pypi/pyversions/datapackage-to-datasette.svg)
+![Python Compatibility](https://img.shields.io/badge/dynamic/json?query=info.requires_python&label=python&url=https%3A%2F%2Fpypi.org%2Fpypi%2Fdatapackage-to-datasette%2Fjson)
 ![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)
 
 Import Frictionless Data
