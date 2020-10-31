@@ -170,7 +170,7 @@ develop = ["mock", "pylama", "pytest", "pytest-cov", "httpretty", "tableschema-s
 
 [[package]]
 name = "deepmerge"
-version = "0.1.0"
+version = "0.1.1"
 description = "a toolset to deeply merge python dictionaries."
 category = "main"
 optional = false
@@ -644,7 +644,7 @@ testing = ["pathlib2", "contextlib2", "unittest2"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.6"
-content-hash = "94ac61ce72aeafd4a57885222bf47960d86b3d76bd451871bb6261aa9942c4aa"
+content-hash = "2e1321a72790fdcd2e6dd6ec61e3297c6fe69cf3d2ad6144a7166ee3afd7fb05"
 
 [metadata.files]
 appdirs = [
@@ -752,8 +752,8 @@ datapackage = [
     {file = "datapackage-1.15.1.tar.gz", hash = "sha256:a066b23befdc4ed5b6f01e5be8dcdd03e8d7a4c4597c77dcc5d2042a990acbbf"},
 ]
 deepmerge = [
-    {file = "deepmerge-0.1.0-py2.py3-none-any.whl", hash = "sha256:ae23dd76d3c0d22d33a3fd3980c92d3f0773e4affb48d9b341847d0b0a24e8f8"},
-    {file = "deepmerge-0.1.0.tar.gz", hash = "sha256:3d37f739e74e8a284ee0bd683daaef88acc8438ba048545aefb87ade695a2a34"},
+    {file = "deepmerge-0.1.1-py2.py3-none-any.whl", hash = "sha256:190e133a6657303db37f9bb302aa853d8d2b15a0e055d41b99a362598e79206a"},
+    {file = "deepmerge-0.1.1.tar.gz", hash = "sha256:fa1d44269786bcc12d30a7471b0b39478aa37a43703b134d7f12649792f92c1f"},
 ]
 docopt = [
     {file = "docopt-0.6.2.tar.gz", hash = "sha256:49b3a825280bd66b3aa83585ef59c4a8c82f2c8a522dbe754a8bc8d08c85c491"},
