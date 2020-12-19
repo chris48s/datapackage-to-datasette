@@ -1,7 +1,7 @@
 # datapackage-to-datasette
 
-[![Build Status](https://travis-ci.org/chris48s/datapackage-to-datasette.svg?branch=master)](https://travis-ci.org/chris48s/datapackage-to-datasette)
-[![Coverage Status](https://coveralls.io/repos/github/chris48s/datapackage-to-datasette/badge.svg?branch=master)](https://coveralls.io/github/chris48s/datapackage-to-datasette?branch=master)
+![Run tests](https://github.com/chris48s/datapackage-to-datasette/workflows/Run%20tests/badge.svg?branch=master)
+[![codecov](https://codecov.io/gh/chris48s/datapackage-to-datasette/branch/master/graph/badge.svg?token=6EPIKL61VO)](https://codecov.io/gh/chris48s/datapackage-to-datasette)
 [![PyPI Version](https://img.shields.io/pypi/v/datapackage-to-datasette.svg)](https://pypi.org/project/datapackage-to-datasette/)
 ![License](https://img.shields.io/pypi/l/datapackage-to-datasette.svg)
 ![Python Compatibility](https://img.shields.io/badge/dynamic/json?query=info.requires_python&label=python&url=https%3A%2F%2Fpypi.org%2Fpypi%2Fdatapackage-to-datasette%2Fjson)
