@@ -130,7 +130,7 @@ python-versions = ">=3.6, <3.7"
 
 [[package]]
 name = "datapackage"
-version = "1.15.1"
+version = "1.15.2"
 description = "Utilities to work with Data Packages as defined on specs.frictionlessdata.io"
 category = "main"
 optional = false
@@ -149,7 +149,7 @@ unicodecsv = ">=0.14"
 
 [package.extras]
 cchardet = ["cchardet (>=2.0)"]
-develop = ["mock", "pylama", "pytest", "pytest-cov", "httpretty", "tableschema-sql", "tox"]
+develop = ["mock", "pylama", "pytest", "pytest-cov", "httpretty", "tableschema-sql"]
 
 [[package]]
 name = "deepmerge"
@@ -702,8 +702,8 @@ dataclasses = [
     {file = "dataclasses-0.8.tar.gz", hash = "sha256:8479067f342acf957dc82ec415d355ab5edb7e7646b90dc6e2fd1d96ad084c97"},
 ]
 datapackage = [
-    {file = "datapackage-1.15.1-py2.py3-none-any.whl", hash = "sha256:66e1f3dc3efa8a24336b2ae9e9a1130065388ca5a731d31b408a388272bac78f"},
-    {file = "datapackage-1.15.1.tar.gz", hash = "sha256:a066b23befdc4ed5b6f01e5be8dcdd03e8d7a4c4597c77dcc5d2042a990acbbf"},
+    {file = "datapackage-1.15.2-py2.py3-none-any.whl", hash = "sha256:5d429d566482ddb5e2424a4f6ac80782340fd2eb707595d601511d077d6caaba"},
+    {file = "datapackage-1.15.2.tar.gz", hash = "sha256:1e91a18c866914dea0acfe2aec785e6ec583c33766b0682c740b30bb7de88c58"},
 ]
 deepmerge = [
     {file = "deepmerge-0.1.1-py2.py3-none-any.whl", hash = "sha256:190e133a6657303db37f9bb302aa853d8d2b15a0e055d41b99a362598e79206a"},
