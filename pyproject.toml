@@ -10,10 +10,8 @@ homepage = "https://github.com/chris48s/datapackage-to-datasette"
 
 [tool.poetry.dependencies]
 python = "^3.6"
-datapackage = "^1.10.0"
-tableschema-sql = "^1.3.0"
-sqlalchemy = "^1.3.0"
 deepmerge = "==0.1.1"
+frictionless = {version = "^4.0.0", extras = ["sql"]}
 
 [tool.poetry.dev-dependencies]
 isort = "^5.7"

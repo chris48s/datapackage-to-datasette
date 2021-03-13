@@ -3,7 +3,7 @@ import sqlite3
 import tempfile
 from unittest import TestCase
 
-import datapackage
+from frictionless import Package
 
 from datapackage_to_datasette.utils import (
     DataImportError,
@@ -20,14 +20,14 @@ class GetMetadataObjectTests(TestCase):
         self.database_tmp_file.close()
 
     def test_minimal_attributes(self):
-        dp = datapackage.Package("tests/fixtures/periodic-table/datapackage.json")
+        dp = Package("tests/fixtures/periodic-table/datapackage.json")
         self.assertDictEqual(
             {"databases": {self.database_tmp_file.name: {"title": "Periodic Table"}}},
             get_metadata_object(self.database_tmp_file.name, dp),
         )
 
     def test_all_attributes(self):
-        dp = datapackage.Package("tests/fixtures/contrived-example/datapackage.json")
+        dp = Package("tests/fixtures/contrived-example/datapackage.json")
 
         expected = {
             "databases": {
@@ -41,7 +41,7 @@ class GetMetadataObjectTests(TestCase):
                             "license": "CC-BY-3.0",
                             "license_url": "https://creativecommons.org/licenses/by/3.0/",
                         },
-                        "unit_prefixes": {
+                        "unit-prefixes": {
                             "license": "CC-BY-4.0",
                             "license_url": "https://creativecommons.org/licenses/by/4.0/",
                         },
@@ -102,7 +102,7 @@ class DatapackageToDatasetteTests(TestCase):
         conn = sqlite3.connect(self.database_tmp_file.name)
         self.assertEqual(174, conn.execute("SELECT COUNT(*) FROM units;").fetchone()[0])
         self.assertEqual(
-            20, conn.execute("SELECT COUNT(*) FROM unit_prefixes;").fetchone()[0]
+            20, conn.execute("SELECT COUNT(*) FROM [unit-prefixes];").fetchone()[0]
         )
 
         expected = {
@@ -127,7 +127,7 @@ class DatapackageToDatasetteTests(TestCase):
                             "title": "Standard Units",
                             "description": "Standard Units for the Frictionless Data specification",
                         },
-                        "unit_prefixes": {
+                        "unit-prefixes": {
                             "title": "Unit Prefixes",
                             "description": "Standard Unit Prefixes for the Frictionless Data specification",
                         },
@@ -149,7 +149,7 @@ class DatapackageToDatasetteTests(TestCase):
         conn = sqlite3.connect(self.database_tmp_file.name)
         self.assertEqual(174, conn.execute("SELECT COUNT(*) FROM units;").fetchone()[0])
         self.assertEqual(
-            20, conn.execute("SELECT COUNT(*) FROM unit_prefixes;").fetchone()[0]
+            20, conn.execute("SELECT COUNT(*) FROM [unit-prefixes];").fetchone()[0]
         )
 
         expected = {
@@ -163,7 +163,7 @@ class DatapackageToDatasetteTests(TestCase):
                             "title": "Standard Units",
                             "description": "Standard Units for the Frictionless Data specification",
                         },
-                        "unit_prefixes": {
+                        "unit-prefixes": {
                             "title": "Unit Prefixes",
                             "description": "Standard Unit Prefixes for the Frictionless Data specification",
                         },

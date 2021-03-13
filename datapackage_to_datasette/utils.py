@@ -2,10 +2,8 @@ import json
 import logging
 from os import path
 
-import datapackage
-from datapackage.package import _slugify_resource_name
 from deepmerge import always_merger
-from sqlalchemy import create_engine
+from frictionless import Package
 
 logging.basicConfig(format="%(levelname)s: %(message)s")
 
@@ -16,37 +14,35 @@ class DataImportError(Exception):
 
 def datapackage_descriptor_to_metadata_object(descriptor):
     obj = {}
-    if descriptor.get("title", None):
-        obj["title"] = descriptor["title"]
-    if descriptor.get("description", None):
-        obj["description"] = descriptor["description"]
-    if descriptor.get("licenses", []):
-        if descriptor["licenses"][0].get("name", None):
-            obj["license"] = descriptor["licenses"][0]["name"]
-        if descriptor["licenses"][0].get("path", None):
-            obj["license_url"] = descriptor["licenses"][0]["path"]
-        num_licenses = len(descriptor["licenses"])
+    if descriptor.title:
+        obj["title"] = descriptor.title
+    if descriptor.description:
+        obj["description"] = descriptor.description
+    if descriptor.licenses:
+        if descriptor.licenses[0].get("name", None):
+            obj["license"] = descriptor.licenses[0]["name"]
+        if descriptor.licenses[0].get("path", None):
+            obj["license_url"] = descriptor.licenses[0]["path"]
+        num_licenses = len(descriptor.licenses)
         if num_licenses > 1:
             logging.warning(
                 f"{num_licenses} licenses found, but datasette metadata only "
                 "allows one license to be specified. Only the first will be used."
             )
-    if descriptor.get("homepage", None):
-        obj["source_url"] = descriptor["homepage"]
+    if getattr(descriptor, "homepage", None):
+        obj["source_url"] = descriptor.homepage
     return obj
 
 
 def get_metadata_object(dbname, dp):
-    metadata = {
-        "databases": {dbname: datapackage_descriptor_to_metadata_object(dp.descriptor)}
-    }
+    metadata = {"databases": {dbname: datapackage_descriptor_to_metadata_object(dp)}}
 
     metadata["databases"][dbname]["tables"] = {}
     for resource in dp.resources:
         if resource.tabular:
-            md = datapackage_descriptor_to_metadata_object(resource.descriptor)
+            md = datapackage_descriptor_to_metadata_object(resource)
             if md:
-                table_name = _slugify_resource_name(resource.name)
+                table_name = resource.name
                 metadata["databases"][dbname]["tables"][table_name] = md
     if not metadata["databases"][dbname]["tables"]:
         del metadata["databases"][dbname]["tables"]
@@ -83,9 +79,8 @@ def datapackage_to_datasette(dbname, data_package, metadata_filename, write_mode
             "Use write_mode to replace or merge the existing file."
         )
 
-    dp = datapackage.Package(data_package)
-    engine = create_engine(f"sqlite:///{dbname}")
-    dp.save(storage="sql", engine=engine)
+    dp = Package(data_package)
+    dp.to_sql(f"sqlite:///{dbname}")
 
     metadata = get_metadata_object(dbname, dp)
 
