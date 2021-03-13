@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "datapackage-to-datasette"
-version = "0.1.0"
+version = "0.2.0"
 description = "Import Frictionless Data Datapackages into SQLite and generate Datasette metadata"
 authors = ["chris48s"]
 license = "MIT"
