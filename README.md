@@ -8,7 +8,7 @@
 ![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)
 
 Import Frictionless Data
-[Datapackage](https://specs.frictionlessdata.io/data-package/)s
+[Datapackage](https://frictionlessdata.io/data-package/)s
 into SQLite and generate
 [Datasette metadata](https://datasette.readthedocs.io/en/stable/metadata.html).
 
