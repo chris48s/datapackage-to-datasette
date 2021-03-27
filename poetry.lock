@@ -126,7 +126,7 @@ pyflakes = ">=2.3.0,<2.4.0"
 
 [[package]]
 name = "frictionless"
-version = "4.1.0"
+version = "4.2.1"
 description = "Frictionless is a framework to describe, extract, validate, and transform tabular data"
 category = "main"
 optional = false
@@ -151,7 +151,7 @@ validators = ">=0.18"
 [package.extras]
 bigquery = ["google-api-python-client (>=1.12.1)"]
 ckan = ["ckanapi (>=4.3)"]
-dev = ["mypy", "moto", "black", "jinja2", "pylama", "pytest", "ipython", "pymysql", "psycopg2", "pytest-cov", "pytest-vcr", "pytest-only", "oauth2client", "requests-mock", "python-dotenv", "pydoc-markdown", "docstring-parser"]
+dev = ["mypy", "moto", "black", "jinja2", "pylama", "pytest", "ipython", "pymysql", "goodread", "psycopg2", "pytest-cov", "pytest-vcr", "pytest-only", "oauth2client", "requests-mock", "python-dotenv", "pydoc-markdown", "docstring-parser"]
 excel = ["openpyxl (>=3.0)", "xlrd (>=1.2)", "xlwt (>=1.2)"]
 gsheets = ["pygsheets (>=2.0)"]
 html = ["pyquery (>=1.4)"]
@@ -618,8 +618,8 @@ flake8 = [
     {file = "flake8-3.9.0.tar.gz", hash = "sha256:78873e372b12b093da7b5e5ed302e8ad9e988b38b063b61ad937f26ca58fc5f0"},
 ]
 frictionless = [
-    {file = "frictionless-4.1.0-py2.py3-none-any.whl", hash = "sha256:049e47e2e4ea7df9b670519539e072998660ebd26bac27e883b9ada9c1c0870a"},
-    {file = "frictionless-4.1.0.tar.gz", hash = "sha256:167c0020f18fc76793239d60735329483d761ca80d34cd73ed6d806219d82ea7"},
+    {file = "frictionless-4.2.1-py2.py3-none-any.whl", hash = "sha256:c686d3e1a73811978156e4d4b3ac14344b8c011b6b6ba12819344a98e1e55d72"},
+    {file = "frictionless-4.2.1.tar.gz", hash = "sha256:f39702bcd54499a56199583126285687cb2c02000ef09e05fb87712ed5e03072"},
 ]
 idna = [
     {file = "idna-2.10-py2.py3-none-any.whl", hash = "sha256:b97d804b1e9b523befed77c48dacec60e6dcb0b5391d57af6a65a312a90648c0"},
