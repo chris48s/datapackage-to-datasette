@@ -104,11 +104,11 @@ python-versions = ">=2.6, !=3.0.*, !=3.1.*"
 
 [[package]]
 name = "deepmerge"
-version = "0.2.1"
+version = "0.3.0"
 description = "a toolset to deeply merge python dictionaries."
 category = "main"
 optional = false
-python-versions = "*"
+python-versions = ">=3"
 
 [[package]]
 name = "flake8"
@@ -517,7 +517,7 @@ testing = ["pytest (>=3.5,!=3.7.3)", "pytest-checkdocs (>=1.2.3)", "pytest-flake
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.6"
-content-hash = "cf5c73824efd8f1e783a3e2456ead0dda1993ef5a70272793bb9ac358fe4df7a"
+content-hash = "75f92cb8debfa3be2d02e8c49bea351b5158e4e5a90578a77a80314858248aa2"
 
 [metadata.files]
 appdirs = [
@@ -610,8 +610,8 @@ decorator = [
     {file = "decorator-4.4.2.tar.gz", hash = "sha256:e3a62f0520172440ca0dcc823749319382e377f37f140a0b99ef45fecb84bfe7"},
 ]
 deepmerge = [
-    {file = "deepmerge-0.2.1-py2.py3-none-any.whl", hash = "sha256:8270901f85fbe249686236cb18bf4bccc69775da2c2e1fa35de3714d5d9d01b3"},
-    {file = "deepmerge-0.2.1.tar.gz", hash = "sha256:5fbd777507dd86c767048bddb2c50adf7da30f7688fe3f3f4e6ede6226dd4b20"},
+    {file = "deepmerge-0.3.0-py2.py3-none-any.whl", hash = "sha256:87166dbe9ba1a3348a45c9d4ada6778f518d41afc0b85aa017ea3041facc3f9c"},
+    {file = "deepmerge-0.3.0.tar.gz", hash = "sha256:f6fd7f1293c535fb599e197e750dbe8674503c5d2a89759b3c72a3c46746d4fd"},
 ]
 flake8 = [
     {file = "flake8-3.9.1-py2.py3-none-any.whl", hash = "sha256:3b9f848952dddccf635be78098ca75010f073bfe14d2c6bda867154bea728d2a"},
