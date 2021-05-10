@@ -112,7 +112,7 @@ python-versions = ">=3"
 
 [[package]]
 name = "flake8"
-version = "3.9.1"
+version = "3.9.2"
 description = "the modular source code checker: pep8 pyflakes and co"
 category = "dev"
 optional = false
@@ -517,7 +517,7 @@ testing = ["pytest (>=3.5,!=3.7.3)", "pytest-checkdocs (>=1.2.3)", "pytest-flake
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.6"
-content-hash = "75f92cb8debfa3be2d02e8c49bea351b5158e4e5a90578a77a80314858248aa2"
+content-hash = "2f72322b6148cc83298617ef76e984e8913288421b526a1360168d0a4a58917e"
 
 [metadata.files]
 appdirs = [
@@ -614,8 +614,8 @@ deepmerge = [
     {file = "deepmerge-0.3.0.tar.gz", hash = "sha256:f6fd7f1293c535fb599e197e750dbe8674503c5d2a89759b3c72a3c46746d4fd"},
 ]
 flake8 = [
-    {file = "flake8-3.9.1-py2.py3-none-any.whl", hash = "sha256:3b9f848952dddccf635be78098ca75010f073bfe14d2c6bda867154bea728d2a"},
-    {file = "flake8-3.9.1.tar.gz", hash = "sha256:1aa8990be1e689d96c745c5682b687ea49f2e05a443aff1f8251092b0014e378"},
+    {file = "flake8-3.9.2-py2.py3-none-any.whl", hash = "sha256:bf8fd333346d844f616e8d47905ef3a3384edae6b4e9beb0c5101e25e3110907"},
+    {file = "flake8-3.9.2.tar.gz", hash = "sha256:07528381786f2a6237b061f6e96610a4167b226cb926e2aa2b6b1d78057c576b"},
 ]
 frictionless = [
     {file = "frictionless-4.10.0-py2.py3-none-any.whl", hash = "sha256:d07ef3aa31f942e6f9c5861ea9e95b5420b4c0ecb2380eefb5e5294dec9adb4e"},
