@@ -126,7 +126,7 @@ pyflakes = ">=2.3.0,<2.4.0"
 
 [[package]]
 name = "frictionless"
-version = "4.16.2"
+version = "4.16.3"
 description = "Frictionless is a framework to describe, extract, validate, and transform tabular data"
 category = "main"
 optional = false
@@ -619,8 +619,8 @@ flake8 = [
     {file = "flake8-3.9.2.tar.gz", hash = "sha256:07528381786f2a6237b061f6e96610a4167b226cb926e2aa2b6b1d78057c576b"},
 ]
 frictionless = [
-    {file = "frictionless-4.16.2-py2.py3-none-any.whl", hash = "sha256:10612b28546721d5ba5adf360bf89a59109f4dd71645ef414f682d6549d019d3"},
-    {file = "frictionless-4.16.2.tar.gz", hash = "sha256:e02c1b5e0d9d71aaef88ef33f1a3e8157ecca47e76c77a545c12af3006c0be90"},
+    {file = "frictionless-4.16.3-py2.py3-none-any.whl", hash = "sha256:809891d742069ce0b68fc1ac8689613c1a924eb815ac42619afa49d024c04339"},
+    {file = "frictionless-4.16.3.tar.gz", hash = "sha256:fee02d08bf99b8ccec3e15f424e0b7d72e22cd0a087af82e24608761a7f5cec2"},
 ]
 idna = [
     {file = "idna-2.10-py2.py3-none-any.whl", hash = "sha256:b97d804b1e9b523befed77c48dacec60e6dcb0b5391d57af6a65a312a90648c0"},
