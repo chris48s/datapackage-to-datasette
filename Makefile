@@ -1,4 +1,5 @@
-.PHONY: help format install lint test
+SHELL := /bin/bash
+.PHONY: help format install lint test release
 
 help:
 	@grep '^\.PHONY' Makefile | cut -d' ' -f2- | tr ' ' '\n'
@@ -23,3 +24,11 @@ lint:
 test:
 	poetry run coverage run --source=datapackage_to_datasette ./run_tests.py
 	poetry run coverage xml
+
+release:
+	# usage: `make release version=0.0.0`
+	make test
+	@echo ""
+	make lint
+	@echo ""
+	./release.sh "$(version)"
