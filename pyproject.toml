@@ -7,6 +7,9 @@ license = "MIT"
 readme = "README.md"
 repository = "https://github.com/chris48s/datapackage-to-datasette"
 homepage = "https://github.com/chris48s/datapackage-to-datasette"
+classifiers = [
+    "Framework :: Datasette"
+]
 
 [tool.poetry.dependencies]
 python = "^3.6"
