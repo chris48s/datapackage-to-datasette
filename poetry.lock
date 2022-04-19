@@ -134,7 +134,7 @@ pyflakes = ">=2.4.0,<2.5.0"
 
 [[package]]
 name = "frictionless"
-version = "4.28.3"
+version = "4.29.0"
 description = "Data management framework for Python that provides functionality to describe, extract, validate, and transform tabular data"
 category = "main"
 optional = false
@@ -685,8 +685,8 @@ flake8 = [
     {file = "flake8-4.0.1.tar.gz", hash = "sha256:806e034dda44114815e23c16ef92f95c91e4c71100ff52813adf7132a6ad870d"},
 ]
 frictionless = [
-    {file = "frictionless-4.28.3-py2.py3-none-any.whl", hash = "sha256:a102485590ea8b71a778cbf9428e58d6157d8d3f7bb5544fad365f48a13b27c2"},
-    {file = "frictionless-4.28.3.tar.gz", hash = "sha256:7c55330a11ca365ea8e81d86f25de0d94cde661a4b9ba4f10800cff3a5ce5c38"},
+    {file = "frictionless-4.29.0-py2.py3-none-any.whl", hash = "sha256:39460cf7430cc656378b8dea0e9ea04d6833748c01ddb0ba435a6e43131f52a9"},
+    {file = "frictionless-4.29.0.tar.gz", hash = "sha256:f50a6a37c02b10bfefefaef85720c61382738bd9eef3ef920dd9c381b97a4af1"},
 ]
 greenlet = [
     {file = "greenlet-1.1.2-cp27-cp27m-macosx_10_14_x86_64.whl", hash = "sha256:58df5c2a0e293bf665a51f8a100d3e9956febfbf1d9aaf8c0677cf70218910c6"},
