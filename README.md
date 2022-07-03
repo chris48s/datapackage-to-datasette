@@ -1,6 +1,6 @@
 # datapackage-to-datasette
 
-![Run tests](https://github.com/chris48s/datapackage-to-datasette/workflows/Run%20tests/badge.svg?branch=master)
+[![Run tests](https://github.com/chris48s/datapackage-to-datasette/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/chris48s/datapackage-to-datasette/actions/workflows/test.yml)
 [![codecov](https://codecov.io/gh/chris48s/datapackage-to-datasette/branch/master/graph/badge.svg?token=6EPIKL61VO)](https://codecov.io/gh/chris48s/datapackage-to-datasette)
 [![PyPI Version](https://img.shields.io/pypi/v/datapackage-to-datasette.svg)](https://pypi.org/project/datapackage-to-datasette/)
 ![License](https://img.shields.io/pypi/l/datapackage-to-datasette.svg)
