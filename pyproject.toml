@@ -14,7 +14,7 @@ classifiers = [
 [tool.poetry.dependencies]
 python = "^3.7"
 deepmerge = "^1.0.1"
-frictionless = {version = "^4.0.0", extras = ["sql"]}
+frictionless = {version = ">=4,<6", extras = ["sql"]}
 
 [tool.poetry.dev-dependencies]
 isort = "^5.11"
