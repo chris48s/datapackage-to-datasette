@@ -1,5 +1,12 @@
 # Changelog
 
+## 📦 0.3.0
+
+* Tested on python 3.11
+* Dropped compatibility with python 3.6 and 3.7
+* Updated for compatibility with frictionless framework 5.x
+* Dropped compatibility with frictionless framework 4.x
+
 ## 📦 0.2.1
 
 * Tested on python 3.10
