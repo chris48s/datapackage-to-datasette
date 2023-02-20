@@ -80,7 +80,7 @@ def datapackage_to_datasette(dbname, data_package, metadata_filename, write_mode
         )
 
     dp = Package(data_package)
-    dp.to_sql(f"sqlite:///{dbname}")
+    dp.publish(f"sqlite:///{dbname}")
 
     metadata = get_metadata_object(dbname, dp)
 
