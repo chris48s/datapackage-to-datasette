@@ -2,11 +2,6 @@
   "name": "period-table",
   "title": "Periodic Table",
   "profile": "tabular-data-package",
-  "licenses": [{
-    "id": "CC0-1.0",
-    "title": "CC0 1.0",
-    "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-  }],
   "resources": [{
     "path": "data.csv",
     "name": "data",
