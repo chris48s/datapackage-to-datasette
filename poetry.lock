@@ -257,14 +257,14 @@ pyflakes = ">=2.5.0,<2.6.0"
 
 [[package]]
 name = "frictionless"
-version = "5.8.3"
+version = "5.10.0"
 description = "Data management framework for Python that provides functionality to describe, extract, validate, and transform tabular data"
 category = "main"
 optional = false
 python-versions = "*"
 files = [
-    {file = "frictionless-5.8.3-py2.py3-none-any.whl", hash = "sha256:2fea66812941cfbe36ecd8fe5378e15c66ae44e82afa8dd577f6c53c3f453f5e"},
-    {file = "frictionless-5.8.3.tar.gz", hash = "sha256:d1c722a133c4823c1f6af92d90e6d38c17b459fb6d6193e1502dd067f91e50cb"},
+    {file = "frictionless-5.10.0-py2.py3-none-any.whl", hash = "sha256:578ec204e0a4d1aa993ae9bbc5fcc4352ac25bc6566f4cae0c27e98640f8bce6"},
+    {file = "frictionless-5.10.0.tar.gz", hash = "sha256:b0a0c518afe475420be08aa4b8de3ac9aad3855cf589b28d63224931aa01ac13"},
 ]
 
 [package.dependencies]
@@ -308,6 +308,7 @@ parquet = ["fastparquet (>=0.8)"]
 postgresql = ["psycopg (>=3.0)", "psycopg2 (>=2.9)", "sqlalchemy (>=1.4)"]
 spss = ["savReaderWriter (>=3.0)"]
 sql = ["sqlalchemy (>=1.4)"]
+visidata = ["visidata (>=2.10)"]
 wkt = ["grako (>=3.99)"]
 zenodo = ["pyzenodo3 (>=1.0)"]
 
