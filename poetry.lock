@@ -257,14 +257,14 @@ pyflakes = ">=2.5.0,<2.6.0"
 
 [[package]]
 name = "frictionless"
-version = "5.10.1"
+version = "5.10.3"
 description = "Data management framework for Python that provides functionality to describe, extract, validate, and transform tabular data"
 category = "main"
 optional = false
 python-versions = "*"
 files = [
-    {file = "frictionless-5.10.1-py2.py3-none-any.whl", hash = "sha256:d341a10a50eba33dba9bb545dd15d46d219f864fe78525b2b45cc84a0fccbe79"},
-    {file = "frictionless-5.10.1.tar.gz", hash = "sha256:97b8b2a01431f922e5961859ef1e891dfacadbee50a6f28d334ed4bcdf50a784"},
+    {file = "frictionless-5.10.3-py2.py3-none-any.whl", hash = "sha256:f5cff735fedaed086d34858bd7a327503a3af15ae09bb199c184b815f7a0815a"},
+    {file = "frictionless-5.10.3.tar.gz", hash = "sha256:a788d9a611385f377cd16579e0e82ba8ea937bc7754f7174b5c7826361eb9ad8"},
 ]
 
 [package.dependencies]
@@ -295,6 +295,7 @@ api = ["fastapi (>=0.78)", "python-multipart (>=0.0)", "uvicorn (>=0.17)"]
 aws = ["boto3 (>=1.9)"]
 bigquery = ["google-api-python-client (>=1.12.1)"]
 ckan = ["frictionless-ckan-mapper (>=1.0)"]
+datasette = ["datasette (>=0.64.2)"]
 dev = ["black", "httpx", "ipython", "livemark", "moto", "oauth2client", "pylama", "pyright", "pytest", "pytest-cov", "pytest-dotenv", "pytest-lazy-fixture", "pytest-mock", "pytest-only", "pytest-timeout", "pytest-vcr", "requests-mock", "yattag"]
 excel = ["openpyxl (>=3.0)", "tableschema-to-template (>=0.0)", "xlrd (>=1.2)", "xlwt (>=1.2)"]
 github = ["pygithub (>=1.50)"]
