@@ -257,14 +257,14 @@ pyflakes = ">=2.5.0,<2.6.0"
 
 [[package]]
 name = "frictionless"
-version = "5.10.3"
+version = "5.10.4"
 description = "Data management framework for Python that provides functionality to describe, extract, validate, and transform tabular data"
 category = "main"
 optional = false
 python-versions = "*"
 files = [
-    {file = "frictionless-5.10.3-py2.py3-none-any.whl", hash = "sha256:f5cff735fedaed086d34858bd7a327503a3af15ae09bb199c184b815f7a0815a"},
-    {file = "frictionless-5.10.3.tar.gz", hash = "sha256:a788d9a611385f377cd16579e0e82ba8ea937bc7754f7174b5c7826361eb9ad8"},
+    {file = "frictionless-5.10.4-py2.py3-none-any.whl", hash = "sha256:8d0f8b0db800c39d0ce112453fc7af8dc8988567953d8ca3077f2a0f7ceb1029"},
+    {file = "frictionless-5.10.4.tar.gz", hash = "sha256:ced90a4e444188cb053acfa7605c8d639ce18cbba9abca35e1663b23c56b5732"},
 ]
 
 [package.dependencies]
@@ -302,6 +302,7 @@ github = ["pygithub (>=1.50)"]
 gsheets = ["pygsheets (>=2.0)"]
 html = ["pyquery (>=1.4)"]
 json = ["ijson (>=3.0)", "jsonlines (>=1.2)"]
+livemark = ["livemark (>=0.110)"]
 mysql = ["pymysql (>=1.0)", "sqlalchemy (>=1.4)"]
 ods = ["ezodf (>=0.3)", "lxml (>=4.0)"]
 pandas = ["pandas (>=1.0)"]
