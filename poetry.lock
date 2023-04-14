@@ -257,14 +257,14 @@ pyflakes = ">=2.5.0,<2.6.0"
 
 [[package]]
 name = "frictionless"
-version = "5.10.5"
+version = "5.11.1"
 description = "Data management framework for Python that provides functionality to describe, extract, validate, and transform tabular data"
 category = "main"
 optional = false
 python-versions = "*"
 files = [
-    {file = "frictionless-5.10.5-py2.py3-none-any.whl", hash = "sha256:dec153aa0e9b79bc8b91d76fb70fcb67addc3c96744176b66dd0ae1c41fd0248"},
-    {file = "frictionless-5.10.5.tar.gz", hash = "sha256:0d92c93f45558cfc08f0a540929bfd527df2efa51b3fa4a9a66a61780bb59e58"},
+    {file = "frictionless-5.11.1-py2.py3-none-any.whl", hash = "sha256:89bc5fc7a7b0c90dff5602d21978ed8222e4001ec759e199d4b1ee0ae52c2061"},
+    {file = "frictionless-5.11.1.tar.gz", hash = "sha256:acf6d2e0a45761e39f390f5b6300b3033cba01b53f9cbfc27b28328496f5f271"},
 ]
 
 [package.dependencies]
@@ -291,7 +291,7 @@ typing-extensions = ">=4.3"
 validators = ">=0.18"
 
 [package.extras]
-api = ["fastapi (>=0.78)", "python-multipart (>=0.0)", "uvicorn (>=0.17)"]
+application = ["fastapi (>=0.78)", "frictionless-ckan-mapper (>=1.0)", "ijson (>=3.0)", "jsonlines (>=1.2)", "livemark (>=0.110)", "openpyxl (>=3.0)", "python-multipart (>=0.0)", "sqlalchemy (>=1.4)", "tableschema-to-template (>=0.0)", "uvicorn (>=0.17)", "xlrd (>=1.2)", "xlwt (>=1.2)"]
 aws = ["boto3 (>=1.9)"]
 bigquery = ["google-api-python-client (>=1.12.1)"]
 ckan = ["frictionless-ckan-mapper (>=1.0)"]
@@ -308,6 +308,7 @@ ods = ["ezodf (>=0.3)", "lxml (>=4.0)"]
 pandas = ["pandas (>=1.0)"]
 parquet = ["fastparquet (>=0.8)"]
 postgresql = ["psycopg (>=3.0)", "psycopg2 (>=2.9)", "sqlalchemy (>=1.4)"]
+server = ["fastapi (>=0.78)", "python-multipart (>=0.0)", "uvicorn (>=0.17)"]
 spss = ["savReaderWriter (>=3.0)"]
 sql = ["sqlalchemy (>=1.4)"]
 visidata = ["visidata (>=2.10)"]
