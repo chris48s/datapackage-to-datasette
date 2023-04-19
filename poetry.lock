@@ -257,14 +257,13 @@ pyflakes = ">=2.5.0,<2.6.0"
 
 [[package]]
 name = "frictionless"
-version = "5.11.1"
+version = "5.12.0"
 description = "Data management framework for Python that provides functionality to describe, extract, validate, and transform tabular data"
 category = "main"
 optional = false
 python-versions = "*"
 files = [
-    {file = "frictionless-5.11.1-py2.py3-none-any.whl", hash = "sha256:89bc5fc7a7b0c90dff5602d21978ed8222e4001ec759e199d4b1ee0ae52c2061"},
-    {file = "frictionless-5.11.1.tar.gz", hash = "sha256:acf6d2e0a45761e39f390f5b6300b3033cba01b53f9cbfc27b28328496f5f271"},
+    {file = "frictionless-5.12.0-py2.py3-none-any.whl", hash = "sha256:a88205ec556cc06b115e01035158ae1502f88fb3f19a03e919b283025cd92026"},
 ]
 
 [package.dependencies]
@@ -298,6 +297,7 @@ ckan = ["frictionless-ckan-mapper (>=1.0)"]
 datasette = ["datasette (>=0.64.2)"]
 dev = ["black", "httpx", "ipython", "livemark", "moto", "oauth2client", "pylama", "pyright", "pytest", "pytest-cov", "pytest-dotenv", "pytest-lazy-fixture", "pytest-mock", "pytest-only", "pytest-timeout", "pytest-vcr", "requests-mock", "yattag"]
 excel = ["openpyxl (>=3.0)", "tableschema-to-template (>=0.0)", "xlrd (>=1.2)", "xlwt (>=1.2)"]
+framework = ["frictionless-ckan-mapper (>=1.0)", "ijson (>=3.0)", "jsonlines (>=1.2)", "openpyxl (>=3.0)", "sqlalchemy (>=1.4)", "tableschema-to-template (>=0.0)", "xlrd (>=1.2)", "xlwt (>=1.2)"]
 github = ["pygithub (>=1.50)"]
 gsheets = ["pygsheets (>=2.0)"]
 html = ["pyquery (>=1.4)"]
