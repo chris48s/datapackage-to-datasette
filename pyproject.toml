@@ -19,7 +19,7 @@ frictionless = {version = ">=5,<6", extras = ["sql"]}
 [tool.poetry.dev-dependencies]
 isort = "^5.12"
 flake8 = "^5.0.4"
-black = "==23.3.0"
+black = "==23.7.0"
 coverage = "^7.2"
 
 [build-system]
