@@ -251,13 +251,13 @@ pyflakes = ">=2.5.0,<2.6.0"
 
 [[package]]
 name = "frictionless"
-version = "5.14.5"
+version = "5.15.0"
 description = "Data management framework for Python that provides functionality to describe, extract, validate, and transform tabular data"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "frictionless-5.14.5-py3-none-any.whl", hash = "sha256:465409c39c8151f33d1425a48bd8a60190c8600c94c18633eb27e0f746ce1152"},
-    {file = "frictionless-5.14.5.tar.gz", hash = "sha256:a4840906068c643c04d6b543085e31b1309abc39888cd1fe80abb7025a833b88"},
+    {file = "frictionless-5.15.0-py3-none-any.whl", hash = "sha256:e8e019b81194824e74d239d4bf88e580024b6b742dd1efa658c2fde6f0d9f707"},
+    {file = "frictionless-5.15.0.tar.gz", hash = "sha256:5914082cc307f49a1b506f7ab509a8de7a768dfdaf7df67dc0bd7a94d8a17044"},
 ]
 
 [package.dependencies]
@@ -266,7 +266,7 @@ chardet = ">=3.0"
 humanize = ">=4.2"
 isodate = ">=0.6"
 jinja2 = ">=3.0"
-jsonschema = ">=2.5"
+jsonschema = "<4.18"
 marko = ">=1.0"
 petl = ">=1.6"
 python-dateutil = ">=2.8"
@@ -287,7 +287,7 @@ aws = ["boto3 (>=1.9)"]
 bigquery = ["google-api-python-client (>=1.12.1)"]
 ckan = ["frictionless-ckan-mapper (>=1.0)"]
 datasette = ["datasette (>=0.64.2)"]
-dev = ["black", "hatch", "httpx", "ipython", "isort", "livemark", "moto", "oauth2client", "pyright", "pytest", "pytest-cov", "pytest-dotenv", "pytest-lazy-fixture", "pytest-mock", "pytest-only", "pytest-timeout", "pytest-vcr", "requests-mock", "ruff", "yattag"]
+dev = ["black", "hatch", "httpx", "ipython", "isort", "livemark", "moto", "neovim", "oauth2client", "pyright", "pytest", "pytest-cov", "pytest-dotenv", "pytest-lazy-fixture", "pytest-mock", "pytest-only", "pytest-timeout", "pytest-vcr", "requests-mock", "ruff", "yattag"]
 duckdb = ["duckdb (>=0.8)", "duckdb-engine (>=0.7)", "sqlalchemy (>=1.4)"]
 excel = ["openpyxl (>=3.0)", "tableschema-to-template (>=0.0)", "xlrd (>=1.2)", "xlwt (>=1.2)"]
 github = ["pygithub (>=1.50)"]
