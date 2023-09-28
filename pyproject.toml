@@ -12,7 +12,7 @@ classifiers = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = ">=3.8"
 deepmerge = "^1.0.1"
 frictionless = {version = ">=5,<6", extras = ["sql"]}
 
