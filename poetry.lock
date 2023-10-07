@@ -243,13 +243,13 @@ pyflakes = ">=3.1.0,<3.2.0"
 
 [[package]]
 name = "frictionless"
-version = "5.15.10"
+version = "5.16.0"
 description = "Data management framework for Python that provides functionality to describe, extract, validate, and transform tabular data"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "frictionless-5.15.10-py3-none-any.whl", hash = "sha256:aeb9648d78ea8cc1a6de22ec84dddd73d340ecc5d1b27a790e1b306672ac9da5"},
-    {file = "frictionless-5.15.10.tar.gz", hash = "sha256:70a351f08e18031164e7745dfb8242d12fa5b9ed785c63927687dfe6b8949449"},
+    {file = "frictionless-5.16.0-py3-none-any.whl", hash = "sha256:966fecda131230fb93acd7035581282471590717b563ffe54922eb5c9ccfb3f4"},
+    {file = "frictionless-5.16.0.tar.gz", hash = "sha256:e92228f2595e07a6e227202d81f66ef88b0c7603ea9e95199420abdbffdad906"},
 ]
 
 [package.dependencies]
@@ -280,7 +280,7 @@ aws = ["boto3 (>=1.9)"]
 bigquery = ["google-api-python-client (>=1.12.1)"]
 ckan = ["frictionless-ckan-mapper (>=1.0)"]
 datasette = ["datasette (>=0.64.2)"]
-dev = ["black", "hatch", "httpx", "ipython", "isort", "livemark", "moto", "neovim", "oauth2client", "pyright", "pytest", "pytest-cov", "pytest-dotenv", "pytest-lazy-fixture", "pytest-mock", "pytest-only", "pytest-timeout", "pytest-vcr", "requests-mock", "ruff", "yattag"]
+dev = ["black", "hatch", "httpx", "ipython", "isort", "livemark", "moto", "neovim", "oauth2client", "pyright (==1.1.317)", "pytest", "pytest-cov", "pytest-dotenv", "pytest-lazy-fixture", "pytest-mock", "pytest-only", "pytest-timeout", "pytest-vcr", "requests-mock", "ruff", "yattag"]
 duckdb = ["duckdb (>=0.8)", "duckdb-engine (>=0.7)", "sqlalchemy (>=1.4)"]
 excel = ["openpyxl (>=3.0)", "tableschema-to-template (>=0.0)", "xlrd (>=1.2)", "xlwt (>=1.2)"]
 github = ["pygithub (>=1.50)"]
