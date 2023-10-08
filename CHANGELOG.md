@@ -1,5 +1,10 @@
 # Changelog
 
+## 📦 0.3.1
+
+* Convert python requirement to open range
+* Tested on python 3.12
+
 ## 📦 0.3.0
 
 * Tested on python 3.11
