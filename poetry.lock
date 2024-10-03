@@ -269,13 +269,13 @@ pyflakes = ">=3.2.0,<3.3.0"
 
 [[package]]
 name = "frictionless"
-version = "5.17.1"
+version = "5.18.0"
 description = "Data management framework for Python that provides functionality to describe, extract, validate, and transform tabular data"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "frictionless-5.17.1-py3-none-any.whl", hash = "sha256:7ab289dec41279a303320340c402abe2319e644fcdb95d80e799304dc0b4e44c"},
-    {file = "frictionless-5.17.1.tar.gz", hash = "sha256:d3d9a52341ec3c869f40e442ce5584546d83c99b0544c59154eaf8767b9289a4"},
+    {file = "frictionless-5.18.0-py3-none-any.whl", hash = "sha256:a82433b81cfcfae21328aad6b93854feb86d5d054b22ac147672eb9c254b6a3d"},
+    {file = "frictionless-5.18.0.tar.gz", hash = "sha256:4b21a10d3ac67e46a4a58a1e8a8a27c6882af4d1608eadfb6ccbfde0b5eef6b9"},
 ]
 
 [package.dependencies]
