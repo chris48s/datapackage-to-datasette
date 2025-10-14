@@ -1,5 +1,10 @@
 # Changelog
 
+## 📦 0.4.0
+
+* Tested on python 3.13, 3.14
+* Dropped compatibility with python < 3.10
+
 ## 📦 0.3.1
 
 * Convert python requirement to open range
