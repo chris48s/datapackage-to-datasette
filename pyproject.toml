@@ -17,7 +17,7 @@ dependencies = [
 [tool.poetry.group.dev.dependencies]
 isort = "^5.13"
 flake8 = "^7.1.2"
-black = "==24.8.0"
+black = "==25.9.0"
 coverage = "^7.6"
 
 [project.urls]
