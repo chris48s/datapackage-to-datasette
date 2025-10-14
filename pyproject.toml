@@ -1,30 +1,35 @@
-[tool.poetry]
+[project]
 name = "datapackage-to-datasette"
 version = "0.3.1"
 description = "Import Frictionless Data Datapackages into SQLite and generate Datasette metadata"
-authors = ["chris48s"]
+authors = [{name = "chris48s"}]
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/chris48s/datapackage-to-datasette"
-homepage = "https://github.com/chris48s/datapackage-to-datasette"
 classifiers = [
     "Framework :: Datasette"
 ]
+requires-python = ">=3.10"
+dependencies = [
+    "deepmerge>=1.0.1,<3.0.0",
+    "frictionless[sql]>=5,<6",
+]
 
-[tool.poetry.dependencies]
-python = ">=3.8"
-deepmerge = ">=1.0.1,<3.0.0"
-frictionless = {version = ">=5,<6", extras = ["sql"]}
-
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
 isort = "^5.13"
-flake8 = { version = "^7.1.2", python = "^3.8.1" }
+flake8 = "^7.1.2"
 black = "==24.8.0"
 coverage = "^7.6"
 
+[project.urls]
+Home = "https://github.com/chris48s/datapackage-to-datasette"
+Source = "https://github.com/chris48s/datapackage-to-datasette"
+
+[tool.poetry]
+requires-poetry = ">=2.0"
+
 [build-system]
-requires = ["poetry>=1.0.2"]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.masonry.api"
 
-[tool.poetry.scripts]
+[project.scripts]
 datapackage-to-datasette = 'datapackage_to_datasette.cli:main'
