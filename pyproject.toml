@@ -1,6 +1,6 @@
 [project]
 name = "datapackage-to-datasette"
-version = "0.4.0"
+version = "0.4.1"
 description = "Import Frictionless Data Datapackages into SQLite and generate Datasette metadata"
 authors = [{name = "chris48s"}]
 license = "MIT"
