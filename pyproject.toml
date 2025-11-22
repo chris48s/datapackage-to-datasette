@@ -18,7 +18,7 @@ dependencies = [
 isort = "^7.0"
 flake8 = "^7.1.2"
 black = "==25.11.0"
-coverage = "^7.11"
+coverage = "^7.12"
 
 [project.urls]
 Home = "https://github.com/chris48s/datapackage-to-datasette"
