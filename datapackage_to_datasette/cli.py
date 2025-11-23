@@ -1,6 +1,7 @@
 import argparse
 import sys
 
+from .__version__ import __version__
 from .utils import datapackage_to_datasette
 
 
@@ -18,6 +19,9 @@ def parse_args(args):
         help="Pass 'replace' or 'merge' to overwrite or merge with an existing datasette metadata file",
         default=None,
         choices=["replace", "merge"],
+    )
+    arg_parser.add_argument(
+        "--version", action="version", version=f"%(prog)s {__version__}"
     )
     return arg_parser.parse_args(args)
 
