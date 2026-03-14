@@ -1518,14 +1518,14 @@ files = [
 
 [[package]]
 name = "simpleeval"
-version = "1.0.3"
+version = "1.0.6"
 description = "A simple, safe single expression evaluator library."
 optional = false
 python-versions = ">=3.9"
 groups = ["main"]
 files = [
-    {file = "simpleeval-1.0.3-py3-none-any.whl", hash = "sha256:e3bdbb8c82c26297c9a153902d0fd1858a6c3774bf53ff4f134788c3f2035c38"},
-    {file = "simpleeval-1.0.3.tar.gz", hash = "sha256:67bbf246040ac3b57c29cf048657b9cf31d4e7b9d6659684daa08ca8f1e45829"},
+    {file = "simpleeval-1.0.6-py3-none-any.whl", hash = "sha256:cbbf6427157c881bd790d7fcc6449dc2c1766f7bc7af2deb582e1d475b653eba"},
+    {file = "simpleeval-1.0.6.tar.gz", hash = "sha256:3a5a743a4f17c53854648144ae41f73eb4f573438d039a59f42cc3172b336141"},
 ]
 
 [[package]]
