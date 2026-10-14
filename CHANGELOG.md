@@ -1,5 +1,10 @@
 # Changelog
 
+## 📦 0.5.0
+
+* Tested on python 3.15
+* Dropped compatibility with python < 3.11
+
 ## 📦 0.4.1
 
 * Fix build build-backend declaration
