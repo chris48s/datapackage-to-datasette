@@ -457,14 +457,14 @@ pyflakes = ">=4.0.0,<4.1.0"
 
 [[package]]
 name = "frictionless"
-version = "5.19.1"
+version = "5.21.0"
 description = "Data management framework for Python that provides functionality to describe, extract, validate, and transform tabular data"
 optional = false
 python-versions = ">=3.8"
 groups = ["main"]
 files = [
-    {file = "frictionless-5.19.1-py3-none-any.whl", hash = "sha256:787b4ce506cf5cbe1747a2ebc8beb7211e170c5a14d6ac8660c6b287af3d986a"},
-    {file = "frictionless-5.19.1.tar.gz", hash = "sha256:d4d9e3b0d02dbe1ed82cefeed5684375cc0d09c6ea3d8adf03e32dc8daa0b268"},
+    {file = "frictionless-5.21.0-py3-none-any.whl", hash = "sha256:c76db03abaee4862aa04116057dbc13e788a2fc18b9be37c2d35dc07a67e1b11"},
+    {file = "frictionless-5.21.0.tar.gz", hash = "sha256:4d9848570bc682943375824a4be7633e8bbdeff228affee763cab346e48000b4"},
 ]
 
 [package.dependencies]
@@ -480,6 +480,7 @@ pydantic = ">=2.0"
 python-dateutil = ">=2.8"
 python-slugify = ">=1.2"
 pyyaml = ">=5.3"
+referencing = ">=0.28.4"
 requests = ">=2.10"
 rfc3986 = ">=1.4"
 simpleeval = ">=0.9.11"
@@ -494,7 +495,7 @@ aws = ["boto3 (>=1.9)"]
 bigquery = ["google-api-python-client (>=1.12.1)"]
 ckan = ["frictionless-ckan-mapper (>=1.0)"]
 datasette = ["datasette (>=0.64.2)"]
-dev = ["hatch", "httpx", "ipython", "livemark", "moto", "neovim", "oauth2client", "pyright (==1.1.317)", "pytest", "pytest-cov", "pytest-dotenv", "pytest-lazy-fixtures", "pytest-mock", "pytest-timeout", "pytest-vcr", "requests-mock", "ruff", "yattag"]
+dev = ["hatch", "httpx", "ipython", "livemark", "moto", "neovim", "oauth2client", "pyright (==1.1.317)", "pytest", "pytest-cov", "pytest-dotenv", "pytest-lazy-fixtures", "pytest-mock", "pytest-timeout", "pytest-vcr", "requests-mock", "ruff (<0.16)", "yattag"]
 duckdb = ["duckdb (>=0.8)", "duckdb-engine (>=0.7)", "sqlalchemy (>=1.4,<=2.0.35)"]
 excel = ["openpyxl (>=3.0)", "tableschema-to-template (>=0.0)", "xlrd (>=1.2)", "xlwt (>=1.2)"]
 github = ["pygithub (>=1.50)"]
@@ -1828,4 +1829,4 @@ crypto-eth-addresses = ["eth-hash[pycryptodome] (>=0.7.0)"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.11"
-content-hash = "86766c13f09ff3781ce522798e81c142734eca3ee04c42b28c38c7c574a84bce"
+content-hash = "6648d37f441cef9d347b489af153b651fd1cab34c9f22819576a811ea4568bed"
